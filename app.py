@@ -30,4 +30,4 @@ def score_comment(comment):
     return text
 
 interface = gr.Interface(fn = score_comment, inputs = gr.inputs.Textbox(lines=2,placeholder = "type yout comment..."),outputs = 'text')
-interface.launch(share=False)
+interface.launch(share=True)
